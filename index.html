@@ -30,6 +30,8 @@
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="function.js"></script>
     <script type="text/javascript" src="stacks_page_page0.js"></script>
+    <script type="text/javascript" src="cufon-yui.js"></script>
+    <script type="text/javascript" src="Tiresias_Infofont_400.font.js"></script>
 
     <!-- Local Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet" type="text/css">
@@ -59,11 +61,25 @@
                     <div id="padding">
                         <img src="stacks_image_25.png" width="1024" height="768" alt="Stacks Image 25"/>
                         <h2>THE FUN-PACKED INTERACTIVE CARTOON</h2>
-                        <img src="stacks_image_40.jpg" width="152" height="152" alt="Stacks Image 40"/>
-                        <img src="stacks_image_62.jpg" width="152" height="152" alt="Stacks Image 62"/>
-                        <img src="stacks_image_64.jpg" width="152" height="152" alt="Stacks Image 64"/>
-                        <img src="stacks_image_66.jpg" width="152" height="152" alt="Stacks Image 66"/>
-                        <img src="stacks_image_68.jpg" width="152" height="152" alt="Stacks Image 68"/>
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="stacks_image_40.jpg" width="152" height="152" alt="Stacks Image 40"/>
+                                </li>
+                                <li>
+                                    <img src="stacks_image_62.jpg" width="152" height="152" alt="Stacks Image 62"/>
+                                </li>
+                                <li>
+                                    <img src="stacks_image_64.jpg" width="152" height="152" alt="Stacks Image 64"/>
+                                </li>
+                                <li>
+                                    <img src="stacks_image_66.jpg" width="152" height="152" alt="Stacks Image 66"/>
+                                </li>
+                                <li>
+                                    <img src="stacks_image_68.jpg" width="152" height="152" alt="Stacks Image 68"/>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <footer>
                         &copy; 2012 Randall & Silk Limited <a href="mailto:contact@randallandsilk.com">GET IN TOUCH!</a>
@@ -72,5 +88,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        Cufon.replace('h1, h2, h3');
+        $(document).ready(function(){
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: true,
+                directionNav: true
+            });
+        });
+    </script>
 </body>
 </html>
